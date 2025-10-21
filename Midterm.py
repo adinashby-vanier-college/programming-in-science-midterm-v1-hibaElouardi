@@ -5,7 +5,7 @@ def area_of_circle(radius):
     r = radius
     area = (math.pi * r**2)
     return round(area, 2)
-print(area_of_circle(5))
+
 
 
 # Q2: Hollow Right Triangle
@@ -16,15 +16,15 @@ def hollow_right_triangle(n):
     result = ""
 
     for i in range(1, n + 1):
-        if i== 1:
+        if i == 1 or i == n:
             result += ("*" * i)
         else:
-            result += "*" * (i - 2) + "*" 
+            result += "*" + (" " * (i - 2)) + "*"
         result += "\n"
 
     return result.rstrip()
 
-print(hollow_right_triangle(5))
+
 
 # Q3: Inverted Pyramid
 def inverted_pyramid(n):
