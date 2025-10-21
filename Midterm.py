@@ -3,8 +3,9 @@ import math
 # Q1: Calculate the area of a circle
 def area_of_circle(radius):
     r = radius
-    area = (math.pi * r**2)
-    return round(area, 2)
+    area_of_circle = (math.pi * r**2)
+
+    return round(area_of_circle, 2)
 
 
 
@@ -32,12 +33,14 @@ def inverted_pyramid(n):
         return "The pyramid height should be at least 3."
 
     result = ""
+
     for i in range (1, n + 1):
         for j in range(i - 1):
             result += " "
         for k in range(2 * (n - i) + 1):
             result += "*"
         result += "\n"
+
     return result.rstrip()
 
 
