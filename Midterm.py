@@ -16,8 +16,8 @@ def hollow_right_triangle(n):
     result = ""
 
     for i in range(1, n + 1):
-        if i== 1 or i == n:
-            result += ("*" * n)
+        if i== 1:
+            result += ("*" * i)
         else:
             result += "*" * (i - 2) + "*" 
         result += "\n"
